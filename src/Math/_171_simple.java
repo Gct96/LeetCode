@@ -20,4 +20,13 @@ public class _171_simple {
         }
         return ans;
     }
+
+    public int titleToNumber_rev1(String columnTitle){
+        int ans=0;
+        for(int i=0;i<columnTitle.length();i++){
+            int num=columnTitle.charAt(i)-'A'+1;
+            ans=ans*26+num;
+        }
+        return ans;
+    }
 }
