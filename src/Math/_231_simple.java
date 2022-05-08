@@ -30,4 +30,10 @@ public class _231_simple {
         }
         return n==1;
     }
+
+    //法三 二进制表示
+    public boolean isPowerOfTwo_3(int n) {
+        return n > 0 && (n & (n - 1)) == 0;
+        //return n > 0 && (n & -n) ==n;
+    }
 }
