@@ -36,4 +36,8 @@ public class _231_simple {
         return n > 0 && (n & (n - 1)) == 0;
         //return n > 0 && (n & -n) ==n;
     }
+
+    public boolean isPowerOfTwo_rev1(int n){
+        return n>0&&(n&(n-1))==0;
+    }
 }
