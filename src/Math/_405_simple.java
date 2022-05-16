@@ -27,4 +27,21 @@ public class _405_simple {
         }
         return sb.reverse().toString();
     }
+
+    public String toHex_rev1(int num){
+        if(num==0)
+            return "0";
+        StringBuilder sb = new StringBuilder();
+        char c;
+        while(num!=0){
+            int u = num & 15;
+            if(u>=10)
+                c=(char)(u-10+'a');
+            else
+                c=(char)(u-'0');
+            sb.append(c);
+            num>>>=4;
+        }
+        return sb.reverse().toString();
+    }
 }
