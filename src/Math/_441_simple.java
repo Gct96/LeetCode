@@ -15,4 +15,13 @@ public class _441_simple {
         }
         return i-1;
     }
+
+    public int arrangeCoins_rev1(int n){
+        int i=1;
+        while(n>=i){
+            n-=i;
+            i++;
+        }
+        return i-1;
+    }
 }
