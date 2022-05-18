@@ -17,4 +17,13 @@ public class _453_simple {
         }
         return res;
     }
+
+    public int minMoves_rev1(int[] nums){
+        int minNum=Arrays.stream(nums).min().getAsInt();
+        int result=0;
+        for(int num:nums){
+            result+=num-minNum;
+        }
+        return result;
+    }
 }
