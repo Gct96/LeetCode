@@ -29,4 +29,23 @@ public class _504_simple {
         String s = convertToBase7(-7);
         System.out.println(s);
     }
+
+    /**
+     * *给定一个整数 num，将其转化为 7 进制，并以字符串形式输出。
+     */
+    public String convertToBase7_rev1(int num) {
+        StringBuilder sb = new StringBuilder();
+        boolean flag=num<0;
+        if(flag)
+            num=-num;
+        if(num==0)
+            return "0";
+        while(num>0){
+            sb.append(num%7);
+            num/=7;
+        }
+        if(flag)
+            sb.append("-");
+        return sb.reverse().toString();
+    }
 }
