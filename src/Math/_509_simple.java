@@ -25,4 +25,13 @@ public class _509_simple {
     public void test(){
         System.out.println(fib(4));
     }
+
+    public int fib_rev1(int n){
+        if(n==0)
+            return 0;
+        else if(n==1)
+            return 1;
+        else
+            return fib_rev1(n-1)+fib_rev1(n-2);
+    }
 }
