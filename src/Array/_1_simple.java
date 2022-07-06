@@ -42,7 +42,6 @@ public class _1_simple {
     @Test
     public int[] twoSum_2(int[] nums, int target) {
         Map<Integer, Integer> hashtable = new HashMap<Integer, Integer>();
-        hashtable.put(nums[0],0);
         for (int i = 1; i < nums.length; ++i) {
            if (hashtable.containsKey(target - nums[i]))
                 return new int[]{hashtable.get(target - nums[i]), i};
@@ -56,8 +55,7 @@ public class _1_simple {
      * 你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。
      */
     public int[] twoSum_2_rev1(int[] nums,int target){
-        Map<Integer,Integer> hashtable=new HashMap();
-        hashtable.put(nums[0],0);
+        Map<Integer,Integer> hashtable=new HashMap<Integer, Integer>();
         for(int i=1;i<nums.length;++i){
             if(hashtable.containsKey(target-nums[i]))
                 return new int[]{hashtable.get(target - nums[i]),i};
