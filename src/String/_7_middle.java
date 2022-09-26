@@ -12,13 +12,13 @@ package String;
 public class _7_middle {
     //从后取余，注意res 初始化 long型
     public int reverse(int x) {
-        long res=0;
-        while(x!=0){
-            int t=x%10;
-            res=res*10+t;
-            x/=10;
+        long res = 0;
+        while (x != 0) {
+            int t = x % 10;
+            res = res * 10 + t;
+            x /= 10;
 
         }
-        return res==(int)res?(int)res:0;
+        return res == (int) res ? (int) res : 0;
     }
 }
