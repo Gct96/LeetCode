@@ -21,7 +21,7 @@ public class _2406_simple {
             while(left<right&& !Character.isLetterOrDigit(s.charAt(right))){
                 right--;
             }
-
+            //转为小写后再判断是否相等
             if(Character.toLowerCase(s.charAt(left))!=Character.toLowerCase(s.charAt(right))){
                 return false;
             }
